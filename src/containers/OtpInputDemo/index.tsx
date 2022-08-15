@@ -38,7 +38,7 @@ const OtpInputDemo: React.FC<ScreenProps> = () => {
                     onPress={generateOtp}
                 />
                 <Text style={styles.genratedOtpText}>
-                    {` :    ${generatedOtp}`}
+                    {` Current OTP :  ${generatedOtp}`}
                 </Text>
             </View>
 
@@ -82,7 +82,8 @@ const styles = StyleSheet.create({
     },
     genratedOtpText: {
         fontSize: 17,
-        marginLeft: 10
+        marginLeft: 10,
+        textDecorationLine: 'underline'
     },
     errorText: {
         fontSize: 16,
